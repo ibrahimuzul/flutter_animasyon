@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'animasyon_widgetlar.dart';
 import 'new_page.dart';
+import 'transform_konu.dart';
 
 void main() => runApp(MyApp());
 
@@ -136,6 +137,13 @@ class _MyHomePageState extends State<MyHomePage>
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) => AnimasyonluWidgetlar()));
               },
+            ),
+            RaisedButton(
+              child: Text("Transform ile ilgili Widgetlar"),
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => TransformWidget()));
+              },
             )
           ],
         ),
@@ -147,4 +155,5 @@ class _MyHomePageState extends State<MyHomePage>
       ),
     );
   }
+
 }
